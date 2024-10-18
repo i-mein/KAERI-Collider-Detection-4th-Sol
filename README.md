@@ -1,9 +1,10 @@
 # Collider-detection-AI using Vibration data
-DACON Competition | Korea Atomic Energy Research Institute 
+
+DACON Competition | KAERI: Korean Atomic Energy Research Institute 
 
 ### Description:
 
-Collider Detection AI for early diagnosis of faults in Nuclear Power Plants using Vibration data (LB #7th)
+Collider Detection AI for early diagnosis of faults in Nuclear Power Plants using Vibration data (LB #5th)
 
 [https://dacon.io/competitions/official/235614/overview/](https://dacon.io/competitions/official/235614/overview/)
 
@@ -33,7 +34,7 @@ If you wish to experiment with the models, download data from competition site a
     - Pvt: 7th     | LB: 0.0042xx
 ---
 
-## 1: Library and Data
+##  Data
 
 - 4 acceleration sensors 
 - ~0.0015 sec measurements with 25600 Hz sampling --> 375 points per measurement
@@ -44,14 +45,9 @@ If you wish to experiment with the models, download data from competition site a
 
 - Evaluation Metric: SMAPE  
 
+ 
 
-## 2: Data Cleansing & Pre-Processing
-
-## 3: Exploratory Data Analysis
-
-to be added soon
-
-## 4: Feature Engineering & Initial Modeling
+## Feature Engineering & Initial Modeling
 
 - FE lags on various windows (per sensor) —> 24 additional features + 5 raw = `29 features with shape: (-1, 375, 29, 1)`
 - FE pct change+ agg stats for each sensor Si  —> `68 features with shape: (-1, 68)`
@@ -68,7 +64,7 @@ Tried also but didn't work:
 - exponential weighted functions
 
 
-## 5: Model Tuning & Evaluation
+##  Model Tuning & Evaluation
 
 
 ### Model 1 [Pytorch]
@@ -223,7 +219,7 @@ def kaeri_metric(y_true,  y_pred):
     return 0.5*E1 + 0.5*E2
 ```
 
-## 6. Conclusion & Discussion
+##  Discussion
 
 My intention here was to experiment with different frameworks (TF, Pytorch) and make comparisons on the model performance, pipelines etc
 
@@ -234,7 +230,7 @@ However, to my best of knowledge a single model with proper features and tuned p
 Next steps will be towards that direction. 
 
 
-### Next steps (that I didn't have time to try during the submission time)
+### Future steps  
 
 - extract FFT features from various bands & from correlations between them
 - Mel spectrograms, MFCC features from spectra
