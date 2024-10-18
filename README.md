@@ -1,10 +1,10 @@
-# Collider-detection-AI using Vibration data
+# AI Collision detection using Vibration data
 
-DACON Competition | KAERI: Korean Atomic Energy Research Institute 
+Data science Competition | Organized by DACON and KAERI: Korean Atomic Energy Research Institute 
 
-### Description:
+### Competition:
 
-Collider Detection AI for early diagnosis of faults in Nuclear Power Plants using Vibration data (LB #5th)
+Collider Detection for early diagnosis of faults in Nuclear Power Plants using Vibration data (LB #5th)
 
 [https://dacon.io/competitions/official/235614/overview/](https://dacon.io/competitions/official/235614/overview/)
 
